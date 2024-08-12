@@ -627,5 +627,4 @@ if "--test" in os.sys.argv:
 	test()
 else:
 	generateFont()
-	generateExamples(characters, ligatures, charactersByCodepoint)
 	test()
