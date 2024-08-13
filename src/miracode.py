@@ -101,8 +101,8 @@ def generateFont():
 		lig.addPosSub("ligatures-subtable", tuple(map(lambda codepoint: charactersByCodepoint[codepoint]["name"], ligature["sequence"])))
 
 	print(f"Generated {len(ligatures)} ligatures")
-	print("Generating WOFF font...")
-	miracode.generate(outputDir + "Miracode.woff")
+	print("Generating WOFF2 font...")
+	miracode.generate(outputDir + "Miracode.woff2")
 	# print("Generating OTF font...")
 	# miracode.generate(outputDir + "Miracode.otf")
 
